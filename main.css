@@ -196,3 +196,63 @@ body {
 #finish-all:hover {
   background-color: #006ad4;
 }
+
+/* 📱 Responsive for mobile */
+@media (max-width: 768px) {
+  body {
+    padding: 15px;
+  }
+
+  .todo-container {
+    width: 100%;
+    border-radius: 12px;
+  }
+
+  .add-task input {
+    width: calc(100% - 50px);
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  .add-task .plus {
+    height: 40px;
+    width: 40px;
+    font-size: 1.2rem;
+    line-height: 40px;
+  }
+
+  .tasks-content > span {
+    align-items: flex-start;
+    font-size: 20px;
+  }
+
+  .task-box .delete {
+    margin-top: 8px;
+    align-self: flex-end;
+  }
+
+  .task-stats {
+    width: 312px;
+    gap: 10px;
+    text-align: center;
+  }
+  .extra-buttons {
+    width: 312px;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 15px;
+  }
+
+  .actions {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .actions button {
+    flex: 1 1 45%;
+    max-width: 200px;
+  }
+}
